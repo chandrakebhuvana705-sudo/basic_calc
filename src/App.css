@@ -1,0 +1,140 @@
+.app {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #f8f4ff 0%, #f1f7f9 40%, #e7f1f4 100%);
+  color: #1b1f23;
+  font-family: "Nunito Sans", "Segoe UI", sans-serif;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.header {
+  max-width: 960px;
+  margin: 0 auto 2rem;
+  text-align: left;
+}
+
+.header h1 {
+  font-family: "DM Serif Display", "Georgia", serif;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  margin: 0 0 0.5rem;
+}
+
+.header p {
+  margin: 0;
+  color: #4b5563;
+}
+
+.layout {
+  display: grid;
+  gap: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.calculator,
+.history {
+  background: white;
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+}
+
+.display {
+  background: #111827;
+  color: #f9fafb;
+  font-size: 2.4rem;
+  padding: 1.2rem;
+  border-radius: 16px;
+  text-align: right;
+  margin-bottom: 1rem;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.controls {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(4, minmax(60px, 1fr));
+}
+
+button {
+  border: none;
+  border-radius: 14px;
+  padding: 0.9rem 0.8rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  background: #f3f4f6;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+}
+
+.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.secondary {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.equal {
+  grid-column: span 2;
+}
+
+.error {
+  margin-top: 0.75rem;
+  color: #b91c1c;
+  font-size: 0.95rem;
+}
+
+.history-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.history h2 {
+  margin: 0;
+  font-family: "DM Serif Display", "Georgia", serif;
+}
+
+.history ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.history li {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.expr {
+  font-weight: 600;
+}
+
+.result {
+  color: #2563eb;
+}
+
+.time {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.muted {
+  color: #6b7280;
+}
